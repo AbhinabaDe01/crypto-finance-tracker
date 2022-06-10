@@ -22,7 +22,7 @@ function App() {
   )
 
   return (
-    <div className="App max-w-8xl">
+    <div className="App max-w-7xl mx-auto min-w-fit">
       <div className="flex flex-col items-center gap-20">
         <div className="search mt-20 ">
           <div className="flex flex-col items-center">
@@ -36,7 +36,8 @@ function App() {
           </div>
           
         </div>
-        <div className="flex flex-row -mb-10 justify-evenly w-3/4 max-w-7xl">
+        
+        {/* <div className="flex flex-row -mb-10 justify-evenly max-w-7xl gap-28 min-w-fit">
           <div className="-ml-8">Image</div>
           <div className="-ml-4">Name</div>
           <div className="">Symbol</div>
@@ -44,6 +45,15 @@ function App() {
           <div className="-mr-10">Volume</div>
           <div className="-mr-14">Price chng</div>
           <div className="-mr-2">MKT Capital</div>
+        </div> */}
+        <div className="hidden md:grid grid-cols-7 -mb-10 max-w-7xl min-w-fit gap-x-16">
+          <div className="">Image</div>
+          <div className="">Name</div>
+          <div className="">Symbol</div>
+          <div>Price</div>
+          <div className="">Volume</div>
+          <div className="">Price chng</div>
+          <div className="">MKT Capital</div>
         </div>
         <div className="result">
           <div>

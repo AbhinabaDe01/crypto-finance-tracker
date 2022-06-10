@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Coin({ image, name, symbol, price, volume, priceChange, marketCap}) {
   return (
-    <div className='grid grid-cols-7 items-center border-y-2 py-4'>
+    <div className='grid grid-rows-7 md:grid-cols-7 items-center border-y-2 py-4 gap-7 md:gap-0'>
         <div className=''>
             <img src={image} alt='coin image' className='h-10 w-10'/>
         </div>
